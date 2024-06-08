@@ -1,0 +1,135 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee; /* Svijetla pozadina */
+    
+}
+
+h1 {
+    background-color: #00796b; /* Tamno zelena */
+    color: white;
+    margin: 0 0 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #009688; /* Svijetlo zelena */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 5px 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00796b;
+}
+
+#addStudentBtn{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin: auto;
+}
+.editStudent{
+    background-color: #016996;
+    padding: 5px 10px;
+    margin: 3px;
+}
+.editStudent:hover{
+    background-color: #024967;
+}
+.deleteStudent{
+    background-color: #a40318;
+    padding: 5px 10px;
+    margin: 3px;
+}
+.deleteStudent:hover{
+    background-color: #6a010f;
+}
+
+table {
+    margin: 20px auto 0;
+    border-collapse: collapse;
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #009688; /* Svijetlo zelena */
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Poluprozirna crna za pozadinu */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: none;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    color: #555; /* Tamno siva za tekst */
+}
+
+input[type="text"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #009688; /* Svijetlo zelena */
+    color: white;
+    margin-top: 20px;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #00796b; /* Tamno zelena */
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Upravljanje studentima</h1>
+    <button id="addStudentBtn">Dodaj studenta</button>
+    <table id="studentsTable">
+        <thead>
+            <tr>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Akcije</th>
+            </tr>
+        </thead>
+        <tbody>
+ 
+            <!-- Studenti će biti dodani ovdje -->
+        </tbody>
+    </table>
+
+    <!-- Modal za dodavanje/uređivanje -->
+    <div id="studentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="studentForm">
+                <input type="hidden" id="studentId">
+                <label for="firstName">Ime:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Prezime:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <button type="submit">Spremi</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
